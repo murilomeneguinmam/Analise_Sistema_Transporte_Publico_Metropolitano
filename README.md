@@ -9,25 +9,21 @@ Os dados são coletados via scripts em Python e ingeridos em uma camada RAW no D
 
 Após o tratamento e modelagem dimensional dos dados, são construídos indicadores de desempenho (KPIs) e dashboards no Power BI, com foco em apoiar a tomada de decisão baseada em dados no contexto do transporte público metropolitano.
 
-# Definição do Problema (Análise de Lacunas)
-O sistema de transporte público demanda monitoramento contínuo para garantir eficiência operacional, equilíbrio entre oferta e demanda e sustentabilidade financeira.
+# Definição do Problema.
+O transporte público metropolitano opera sob alta variabilidade de demanda, exigindo monitoramento contínuo para garantir eficiência operacional, equilíbrio de capacidade e qualidade do serviço prestado à população.
 
-A partir dos dados de bilhetagem eletrônica, este projeto busca responder às seguintes questões analíticas:
+A partir dos dados de bilhetagem eletrônica, este projeto busca analisar o comportamento da demanda e os níveis de ocupação das linhas, com foco em identificar padrões operacionais e possíveis gargalos de capacidade.
 
-Total de passageiros transportados
+As principais questões analíticas abordadas são:
 
-Como o volume de passageiros se comporta entre dias úteis, finais de semana e feriados?
+Quais linhas concentram maior volume de passageiros ao longo do período analisado?
 
-Média de passageiros transportados
+Existe sazonalidade na demanda considerando variações mensais e diárias?
 
-Quantidade de linhas
+Quantas linhas operam em nível crítico de ocupação (superlotação)?
 
-Quantidade de empresas operando
+Como a taxa média de ocupação se comporta ao longo do tempo?
 
-Quais linhas concentram maior volume de passageiros?
+Há concentração de demanda por grupos estruturais de linhas?
 
-Como o volume de passageiros se comporta entre dias úteis, finais de semana e feriados?
-
-Quais padrões podem indicar necessidade de ajuste operacional?
-
-O objetivo é transformar dados operacionais em informação estratégica, apoiando decisões relacionadas à alocação de frota, planejamento de horários e análise de desempenho.
+O objetivo é apoiar o planejamento operacional e o capacity planning do sistema, fornecendo indicadores que permitam identificar desequilíbrios na distribuição da frota, monitorar criticidade operacional e embasar decisões orientadas a dados.
