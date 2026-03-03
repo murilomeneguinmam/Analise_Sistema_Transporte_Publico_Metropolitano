@@ -1,12 +1,13 @@
 # Análise do Sistema de Transporte Público Metropolitano
 
 # Contexto do projeto
-Este projeto realiza a análise de dados de bilhetagem eletrônica do transporte público da cidade de São Paulo, disponibilizados publicamente pela SPTrans.
+Este projeto tem como objetivo a análise de dados de bilhetagem eletrônica do transporte público da cidade de São Paulo, disponibilizados publicamente pela SPTrans.
 
-Os dados são fornecidos em arquivos XLS e XLSX e são extraídos via scripts em Python. Após a ingestão, os dados são armazenados em uma camada RAW no Databricks e tratados seguindo a arquitetura de dados em camadas (Bronze, Silver e Gold).
+A análise busca compreender padrões de demanda, volume de passageiros, comportamento temporal e possíveis oportunidades de otimização operacional, utilizando dados históricos extraídos em formato XLS/XLSX.
 
-Com os dados refinados, são construídos indicadores e dashboards analíticos no Power BI para geração de insights estratégicos sobre demanda, volume de passageiros e comportamento operacional do sistema de transporte.
+Os dados são coletados via scripts em Python e ingeridos em uma camada RAW no Databricks. O processamento segue a arquitetura Medallion (Bronze, Silver e Gold), garantindo organização, qualidade e confiabilidade das informações até a camada analítica.
 
+Após o tratamento e modelagem dimensional dos dados, são construídos indicadores de desempenho (KPIs) e dashboards no Power BI, com foco em apoiar a tomada de decisão baseada em dados no contexto do transporte público metropolitano.
 
 
 
