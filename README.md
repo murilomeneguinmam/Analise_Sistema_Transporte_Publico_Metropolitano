@@ -18,26 +18,26 @@ As principais questões analíticas abordadas são:
 
  #### Quais linhas concentram maior volume de passageiros ao longo do período analisado?
 
-Existe sazonalidade na demanda considerando variações mensais e diárias?
+ #### Existe sazonalidade na demanda considerando variações mensais e diárias?
 
-Quantas linhas operam em nível crítico de ocupação (superlotação)?
+ #### Quantas linhas operam em nível crítico de ocupação (superlotação)?
 
-Como a taxa média de ocupação se comporta ao longo do tempo?
+ #### Como a taxa média de ocupação se comporta ao longo do tempo?
 
-Há concentração de demanda por grupos estruturais de linhas?
+ #### Há concentração de demanda por grupos estruturais ?
 
 O objetivo é apoiar o planejamento operacional e o capacity planning do sistema, fornecendo indicadores que permitam identificar desequilíbrios na distribuição da frota, monitorar criticidade operacional e embasar decisões orientadas a dados.
 
  # Arquitetura do processo de ingestão
 
  
-🔹 Camada RAW
+ #### Camada RAW
+📁 VOLUMES
+ raw_sptrans/ Armazenamento dos arquivos originais extraídos em formato XLS/XLSX.
 
-Armazenamento dos arquivos originais extraídos em formato XLS/XLSX.
-
-🔹 Camada Bronze
-
-Conversão e padronização inicial dos dados, com tipagem e tratamento básico de inconsistências.
+🗄️ DATABASES (Unity Catalog)
+ #### Camada Bronze
+ bronze_db/ bronze_bilhetagem_diario / Delta table união de todos os XLS/XLSX, dados raw unificados, com limpeza mínima remoção de headers irrelevantes, colunas vazias. 
 
 🔹 Camada Silver
 
