@@ -27,3 +27,23 @@ Como a taxa média de ocupação se comporta ao longo do tempo?
 Há concentração de demanda por grupos estruturais de linhas?
 
 O objetivo é apoiar o planejamento operacional e o capacity planning do sistema, fornecendo indicadores que permitam identificar desequilíbrios na distribuição da frota, monitorar criticidade operacional e embasar decisões orientadas a dados.
+
+ # Arquitetura do processo de ingestão
+
+ 
+🔹 Camada RAW
+
+Armazenamento dos arquivos originais extraídos em formato XLS/XLSX.
+
+🔹 Camada Bronze
+
+Conversão e padronização inicial dos dados, com tipagem e tratamento básico de inconsistências.
+
+🔹 Camada Silver
+
+Aplicação de regras de negócio, limpeza avançada, normalização e preparação para análise.
+
+🔹 Camada Gold
+
+Modelagem dimensional (Star Schema), construção da tabela fato e dimensões analíticas.
+ 
