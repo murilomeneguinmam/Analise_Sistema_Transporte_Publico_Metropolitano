@@ -28,22 +28,22 @@ As principais questões analíticas abordadas são:
 
 O objetivo é apoiar o planejamento operacional e o capacity planning do sistema, fornecendo indicadores que permitam identificar desequilíbrios na distribuição da frota, monitorar criticidade operacional e embasar decisões orientadas a dados.
 
- # Arquitetura do processo de ingestão
+# Arquitetura do processo de ingestão
 
- 
- #### Camada RAW
+#### Camada RAW
 📁 VOLUMES
  raw_sptrans/ Armazenamento dos arquivos originais extraídos em formato XLS/XLSX.
 
 🗄️ DATABASES (Unity Catalog)
- #### Camada Bronze
- bronze_db/ bronze_bilhetagem_diario / Delta table união de todos os XLS/XLSX, dados raw unificados, com limpeza mínima remoção de headers irrelevantes, colunas vazias. 
+#### Camada Bronze
+sptrans_bronze/ bronze_bilhetagem_diario / 
+Delta Table-união de todos os XLS/XLSX, dados raw unificados, com limpeza mínima remoção de headers irrelevantes, colunas vazias. 
 
-🔹 Camada Silver
+#### Camada Silver
+sptrans_silver/ silver_bilhetagem_diario / 
+Delta Table-Dados limpos, padronizados, data extraída, cabeçalhos repetidos removidos.
 
-Aplicação de regras de negócio, limpeza avançada, normalização e preparação para análise.
-
-🔹 Camada Gold
-
-Modelagem dimensional (Star Schema), construção da tabela fato e dimensões analíticas.
+#### Camada Gold
+sptrans_gold/ fato_passageiros_diario / dim_calendario / dim_empresa / dim_grupo / dim_linha / dim_lote / dim_tipo_passageiros / 
+Modelagem dimensional (Star Schema), Tabela fato e dimensões analíticas.
  
