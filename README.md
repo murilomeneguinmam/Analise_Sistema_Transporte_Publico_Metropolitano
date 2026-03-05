@@ -48,3 +48,4 @@ Delta Table-Dados limpos, padronizados, data extraída, cabeçalhos repetidos re
 sptrans_gold/ fato_passageiros_diario / dim_calendario / dim_empresa / dim_grupo / dim_linha / dim_lote / dim_tipo_passageiros / 
 Modelagem dimensional (Star Schema), Tabela fato e dimensões analíticas.
  
+![Arquitetura_Sistema de transporte Público Metropolitano](https://github.com/user-attachments/assets/87a39d73-9a7a-47e8-970e-a07a84579dcf)
