@@ -40,11 +40,11 @@ O objetivo é apoiar o planejamento operacional e o capacity planning do sistema
 sptrans_bronze/ bronze_bilhetagem_diario / 
 Delta Table-união de todos os XLS/XLSX, dados raw unificados, com limpeza mínima remoção de headers irrelevantes, colunas vazias. 
 
-#### Camada Silver
+#### Camada Prata
 sptrans_silver/ silver_bilhetagem_diario / 
 Delta Table-Dados limpos, padronizados, data extraída, cabeçalhos repetidos removidos.
 
-#### Camada Gold
+#### Camada Ouro
 sptrans_gold/ fato_passageiros_diario / dim_calendario / dim_empresa / dim_grupo / dim_linha / dim_lote / dim_tipo_passageiros / 
 Modelagem dimensional (Star Schema), Tabela fato e dimensões analíticas.
  
