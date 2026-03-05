@@ -32,6 +32,7 @@ O objetivo é apoiar o planejamento operacional e o capacity planning do sistema
 
 #### Camada RAW
 📁 VOLUMES
+
  raw_sptrans/ Armazenamento dos arquivos originais extraídos em formato XLS/XLSX.
 
 🗄️ DATABASES (Unity Catalog)
