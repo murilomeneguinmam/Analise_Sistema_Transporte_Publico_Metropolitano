@@ -9,7 +9,7 @@ Os dados são coletados via scripts em Python e ingeridos em uma camada RAW no D
 
 Após o tratamento e modelagem dimensional dos dados, são construídos indicadores de desempenho (KPIs) e dashboards no Power BI, com foco em apoiar a tomada de decisão baseada em dados no contexto do transporte público metropolitano.
 
-# Definição do Problema.
+# Definição do Problema
 O transporte público metropolitano opera sob alta variabilidade de demanda, exigindo monitoramento contínuo para garantir eficiência operacional, equilíbrio de capacidade e qualidade do serviço prestado à população.
 
 A partir dos dados de bilhetagem eletrônica, este projeto busca analisar o comportamento da demanda e os níveis de ocupação das linhas, com foco em identificar padrões operacionais e possíveis gargalos de capacidade.
